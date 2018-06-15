@@ -1,0 +1,73 @@
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>SM.Contact</title>
+
+      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600" rel="stylesheet">
+      <link rel="stylesheet" href="./css/styles.css">
+   </head>
+   <body class="m0">
+      <div id="app-container">
+        <nav class="fixed z2 top-0 right-0 p3 h6">
+          <a class="ml2 nav__btn" href="./index.html">WORK</a>
+          <a class="ml2 nav__btn" href="./about.html">ABOUT</a>
+          <a class="ml2 nav__btn nav__btn--selected" href="./contact.html">CONTACT</a>
+        </nav>
+
+        <header class="header header--contact">
+          <div class="header--contact__content py4 px1 max-width-3 mx-auto">
+            <h1 class=" header--contact__title">Let's Work Together</h1>
+            <h2 class="header--index__subtitle pl1 font-weight-thin">Sebastian Moffet</h2>
+
+            <form class="flex flex-wrap pt2">
+              <div class="col-12 p1">
+                <h3 class="font-weight-thin">About You</h3>
+              </div>
+              <div class="col-12 sm-col-6 flex-wrap p2">
+                <label for="search" class="block mb1 font-color-tertiary">Name</label>
+                <input id="search" type="search" class="input block col-12 p1"/ >
+              </div>
+              <div class="col-12 sm-col-6 flex-wrap p2">
+                <label for="search" class="block mb1 font-color-tertiary">Email</label>
+                <input id="search" type="search" class="input block col-12 p1"/ >
+              </div>
+              <div class="col-12 p1">
+                <hr/>
+              </div>
+              <div class="col-12 p1">
+                <h3 class="font-weight-thin">Message</h3>
+              </div>
+
+              <div class="col-6 sm-col-5 flex-wrap p2">
+                <label for="search" class="block mb1 font-color-tertiary">Subject</label>
+                <input id="search" type="search" class="input block col-12 p1"/ >
+              </div>
+              <div class="col-12 sm-col-7 flex-wrap p2">
+                <label for="search" class="block mb1 font-color-tertiary">Body</label>
+                <textarea id="search" type="search" rows="4" class="input block col-12 p1"> </textarea>
+              </div>
+              <div class="col-12 flex-wrap p2 right-align">
+                <button class="btn btn-input px3 py1" >Submit</button>
+              </div>
+
+
+
+            </form>
+
+          </div>
+
+        </header>
+        <footer class="footer">
+          <h4 class="max-width-4 p2 mx-auto h4">
+            Follow me: <a href="#">LINKED IN</a> | <a href="#">TWITTER</a> | <a href="#">INSTAGRAM</a>
+          </h4>
+        </footer>
+      </div>
+      <script type="text/javascript">
+        document
+          .getElementById('app-container')
+          .style.opacity = 1;
+      </script>
+   </body>
+</html>

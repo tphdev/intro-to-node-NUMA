@@ -1,0 +1,190 @@
+$primary-font: 'Josefin Sans', sans-serif;
+$secondary-font: 'Helvetica';
+
+$primary-color: #536976;
+$secondary-color: #292E49;
+$tertiary-color: #396E8D;
+
+@import "_basscss";
+
+*{box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: $primary-font, sans-serif;
+  line-height: 1.4;
+}
+
+
+html{
+  font-size: 18px;
+}
+
+body{
+  background: #999;
+}
+
+img {
+  width: 100%;
+}
+
+.input{
+  background-color: rgba(0,0,0,0);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+textarea{
+  font-family: $primary-font;
+}
+
+.btn-input{
+  background: $tertiary-color;
+  border: 0;
+  color: #fff;
+  font-size: .75rem;
+}
+
+.abs-mask{
+  position: absolute;
+  top: .5rem;
+  left: .5rem;
+  width: calc(100% - 1rem);
+  height: calc(100% - 1rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(50,50,50,.7);
+  color: #fff;
+}
+
+
+.font-weight-thin{
+  font-weight: 300;
+}
+
+
+.font-color-primary{
+  color: $primary-color;
+}
+
+.font-color-secondary{
+  color: $secondary-color;
+}
+
+.font-color-tertiary{
+  color: $tertiary-color;
+}
+
+#app-container{
+  opacity: 0;
+  transition: .8s opacity;
+}
+
+.nav__btn{
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #333;
+}
+.nav__btn--selected{
+  border-bottom: 1px solid #fff;
+}
+
+.header{
+  position: relative;
+  background: #536976;  /* fallback for old browsers */
+  min-height: 100vh;
+  overflow: hidden;
+  color: #fff;
+}
+
+.header--404{
+  position: relative;
+  background: url('../images/404-bg-img.jpg');  /* fallback for old browsers */
+  background-size: cover;
+
+}
+
+.header__slice{
+  height: 75%;
+  width: 300%;
+  position: absolute;
+  background: #292E49;
+  bottom: -20%;
+  left: -25%;
+  transform: rotate(-8deg) ;
+}
+
+.header--index__content{
+  color: #fff;
+}
+
+  .header--index__title{
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: -1.5rem;
+  }
+  .header--index__subtitle{
+    color: #aaa;
+  }
+
+.header--about{
+  color: #aaa;
+}
+
+.header--about__intro{
+  font-weight: 4  00;
+}
+
+.header--about__profile-img{
+  max-width: 240px;
+}
+
+.header--about__name{
+  color: $secondary-color;
+}
+
+.header--about__text-content{
+  max-width: 350px;
+
+}
+.header--about__tech-logo{
+  width: 60px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header--about__tech-logo{
+  width: 130px;
+}
+
+.header--contact{
+  background-color: $secondary-color;
+  background-image: url('../images/bg-prism.png');
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+
+.header--contact__title{
+  line-height: 1;
+  margin-bottom: -1.25rem;
+}
+
+.section--index{
+  background: #fff;
+}
+
+.section--index__content{
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.footer{
+  background: $tertiary-color;
+  padding: 2rem 0;
+  color: #fff;
+  font-weight: 300;
+  a {color: $secondary-color;}
+}
